@@ -1,8 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
     # set the value of the matrix
@@ -21,11 +16,6 @@ makeCacheMatrix <- function(x = matrix()) {
          getinverse = getinverse)
 }
     
-    
-
-
-## Write a short comment describing this function
-
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getinverse()
@@ -38,3 +28,10 @@ cacheSolve <- function(x, ...) {
         x$setinverse(m)
         m       
 }
+
+#test
+a <- makeCacheMatrix()  #initialize
+a$set(matrix(1:4,2,2))  #set the square invertible matrix
+a$get() #get the matrix
+cacheinverse(a) #calculate the inverse 
+
