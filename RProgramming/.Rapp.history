@@ -1,0 +1,381 @@
+month=a[a[,5]>=5]
+a[,5]
+May=a[1:31,]
+May
+ozoneinmay=may[,1]
+ozoneinmay=May[,1]
+max(ozoneinmay)
+new=ia.na(ozoneinmay)
+new=is.na(ozoneinmay)
+ozonenew=ozone(!new)
+ozonenew=ozoneinmay(!new)
+ozoneinmay
+june=a[32:61,]
+june
+temp=june[,4]
+mean(temp)
+b
+18=b[b[,1]>31, b[,4]>90]
+o=b[,1]>31
+o
+o=b[b[,1]>31]
+$Ozone
+b$Ozone
+18=b[b$Ozone>31]
+a=b$Ozone>31
+a
+b(a)
+b(!a)
+18=b[b$Ozone>31, b$Temp>90]
+1=b[b$Ozone>31]
+1
+18=b[b$Ozone>31& b$Temp>90]
+18=b[b$Ozone>=32 & b$Temp>=90]
+subset18=subset(b,b$Ozone>31 & b$Temp>90)
+subset18
+mean(subset18$solar.R)
+s=subset18$Solar.R
+mean(s)
+ozone=b[,1]
+bad=is.na(ozone)
+17=ozone(!bad)
+o=ozone(!bad)
+ozone(!bad)
+b(!bad)
+mean(ozone, rm=bad)
+x=1:4
+y=2
+x+y
+mean(ozone)
+ozone
+o=ozone[!bad]
+mean)o
+mean(o)
+?subset
+x=c("a","b","c","d")
+for(i in 1:4){print(x[i])}
+for(i in seq_along(x)){print(x[i])}
+for(letter in x){print(letter)}
+for(i in 1:4) print(x[i])
+x=matrix(1:6,2,3)#
+for(i in seq_len(nrow(x))){for (j in seq_len(ncol(x))){#
+		pring((x[i,j]))#
+        }#
+}
+x=matrix(1:6,2,3)#
+for(i in seq_len(nrow(x))){for (j in seq_len(ncol(x))){#
+		print((x[i,j]))#
+        }#
+}
+count=0#
+while(count<10){#
+	print(count)#
+	count=count+1#
+}
+?rbinom
+z=5#
+while(z>=3 && z<=10){#
+	print(z)#
+	coin=rbinom(1,1,0.5)#
+	if(coin=1){z=z+1#
+		}else{#
+			z=z-1#
+		}#
+}
+z=5#
+while(z>=3 && z<=10){#
+	print(z)#
+	coin=rbinom(1,1,0.5)#
+	if(coin==1){z=z+1#
+		}else{#
+			z=z-1#
+		}#
+}
+for(i in 1:100){#
+	if(i<=20){#
+		next#
+	}#
+	print(i#
+	)#
+}
+?numeric
+install.packages("swirl")
+library(swirl)
+swirl()
+5+7
+x<-5+7
+x
+y<-x-3
+y
+z<-c(1.1, 9, 3.14)
+?c()
+?c
+z
+c(z,555)
+c(z,555,z)
+z*2+100
+mySqrt<-sqrt(z-1)
+mySqrt
+myDiv<-z/mySqrt
+myDiv
+c(1,2,3,4)+c(0,10)
+c(1,2,3,4)+c(0,10,100)
+1:20
+pi:10
+15:1
+?`:`
+seq(1,20)
+seq(0,10, by=0.5)
+my_seq<-seq(5, 10, length=30)
+length(my_seq)
+1:length(my_seq)
+seq(along=my_seq)
+seq_along(my_seq)
+rep(0, times=40)
+rep(c(0,1,2), times =10)
+rep(c(0,1,2), each=10)
+num_vect<-c(0.5, 55, -10, 6)
+num_vect<1
+tf<-num_vect<1
+tf
+tl<-num_vect>=6
+num_vect>=6
+my_char<-c("My", "name", "is")
+my_char
+paste(my_char,collapse="")
+paste(my_char, collapse=" ")
+my_name<-c(my_char, "Adrienne")
+my_name
+paste(my_name, collapse=" ")
+paste("Hello", "world", sep=" ")
+paste("Hello", "world!", sep = " ")
+paste(1:3, c("X", "Y", "Z"), sep="")
+paste(LETTERS, 1:4, sep="-")
+x<-c(44, NA, 5, NA)
+x*3
+y<-rnorm(1000)
+z<-rep(NA, 1000)
+myData<-sample(c(y,z), 100)
+myNA<-is.na(myData)
+myNA
+myData==NA
+sum(myNA)
+myData
+0/0
+Inf-Inf
+x<-c(rnorm(20), rep(NA, 20))
+x
+x[1:10]
+x[is.na(x)]
+y<-x[!is.na(x)]
+y
+y[y>0]
+x[x>0]
+x[!is.na(x)&x>0]
+x[c(3, 5, 7)]
+x[0]
+x[3000]
+x[c(-2,-10)]
+x[-c(2,10)]
+vect<-c(foo=11, bar=2, norf=NA)
+vect
+name(vect)
+names(vect)
+vect2<-c(11, 2, NA)
+vect2<-c("foo", "bar", "norf")
+names(vect2)<-c("foo", "bar", "norf")
+identical(vect, vect2)
+vect["bar"]
+vect[c("foo", "bar")]
+myVector<-c(1:20)
+myVector<-1:20
+myVector
+dim(myVector)
+length(myVector)
+dim(myVector)<-c(4,5)
+dim(myVector)
+attributes(myVector)
+myVector
+class(myVector)
+myMatrix<-myVector
+?matrix
+myMatrix2<matrix(1:20, nrow=4, ncol=5)
+myMatrix2<-matrix(1:20, nrow=4, ncol=5)
+identical(myMatrix, myMatrix2)
+patients<-c("Bill", "Gina", "Kelly","Sean")
+cbind(patients, myMatrix)
+myData<-data.frame(patients, myMatrix)
+myData
+class(myData)
+cnames<-c("patients", "age","weight", "bp", "rating","test")
+cnames<-c("patients" ,"age", "weight", "bp", "rating", "test")
+cnames<-c("patient" ,"age", "weight", "bp", "rating", "test")
+colnames(cnames)
+colnames(myData)<-cnames
+myData
+f1=gl(2,3)
+f2=gl(3,2)
+f1
+f2
+?gl
+f1:f2
+?source
+directory<-source("/Users/adrienne716/Desktop/Summer/Coursera/R/specdata")
+directory<-source("/Users/adrienne716/Desktop/Summer/Coursera/R/")
+directory<-c("/Users/adrienne716/Desktop/Summer/Coursera/R/")
+directory(specdata)
+directory<-c("/Users/adrienne716/Desktop/Summer/Coursera/R/specdata")
+directory
+directory<-source("/Users/adrienne716/Desktop/Summer/Coursera/R")
+directory<-source("/Users/adrienne716/Desktop/Summer/Coursera/R/specdata")
+?function
+pollutantmean <- function(directory, pollutant, id = 1:332){#
+	directory <- ("./specdata/")#
+	mean_vector<-c()#
+	 all_files <- as.character( list.files(directory) )#
+    file_paths <- paste(directory, all_files, sep="")#
+    for(i in id) {#
+        current_file <- read.csv(file_paths[i], header=T, sep=",")#
+        head(current_file)#
+        pollutant#
+        na_removed <- current_file[!is.na(current_file[, pollutant]), pollutant]#
+        mean_vector <- c(mean_vector, na_removed)#
+    }#
+    result <- mean(mean_vector)#
+    return(round(result, 3))#
+}
+source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
+submit()
+submit()
+?head
+id_len <- length(id)#
+    complete_data <- rep(0, id_len)
+?rep
+?complete.cases
+sum(complete.cases(current_file))
+?listfiles
+?listfile
+?list.files
+complete<-function(directory, id=1:332){#
+	directory<-("./specdata/")#
+	all_files <- as.character( list.files(directory) )#
+    file_paths <- paste(directory, all_files, sep="")#
+     id_len <- length(id)#
+    complete_data <- rep(0, id_len)#
+    j <- 1 #
+    for (i in id) {#
+        current_file <- read.csv(file_paths[i], header=T, sep=",")#
+        complete_data[j] <- sum(complete.cases(current_file))#
+        j <- j + 1#
+    }#
+    result <- data.frame(id = id, nobs = complete_data)#
+    return(result)#
+}
+complete("specdata", 3)
+source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
+submit
+submit()
+all_files<-list.files(path=".")
+all_files
+?cor
+a=rep(0,length(ids))
+a=rep(0,10)
+a
+corr <- function(directory, threshold = 0){#
+	directory<-("./specdata/")#
+	all_files <- as.character( list.files(directory) )#
+     file_paths <- paste(directory, all_files, sep="")#
+     complete_table<-complete("specdata", 1:332)#
+     nobs<-complete_table$nobs#
+     ids<-complete_table$id[nods>threshold]#
+     id_len<-length(ids)#
+     corr_vector<-rep(0,id_len)#
+     j<-1#
+     for (i in ids){#
+     	current_files<-read.csv(file_paths[i],header=T, sep=",")#
+     	corr_vector[j]<-cor(current_file$sulfate, current_file$nitrate, use=complete.obs)#
+     	j<-j+1#
+     }#
+     result<-corr_vector#
+     return(result)#
+ }
+?cor
+cr<-corr("specdata", 150)
+cr
+corr <- function(directory, threshold = 0){#
+	directory<-("./specdata/")#
+	all_files <- as.character( list.files(directory) )#
+     file_paths <- paste(directory, all_files, sep="")#
+     complete_table<-complete("specdata", 1:332)#
+     nobs<-complete_table$nobs#
+     ids<-complete_table$id[nobs>threshold]#
+     id_len<-length(ids)#
+     corr_vector<-rep(0,id_len)#
+     j<-1#
+     for (i in ids){#
+     	current_files<-read.csv(file_paths[i],header=T, sep=",")#
+     	corr_vector[j]<-cor(current_file$sulfate, current_file$nitrate, use=complete.obs)#
+     	j<-j+1#
+     }#
+     result<-corr_vector#
+     return(result)#
+ }
+cr<-corr("specdata", 150)
+?cor
+corr <- function(directory, threshold = 0){#
+	directory<-("./specdata/")#
+	all_files <- as.character( list.files(directory) )#
+     file_paths <- paste(directory, all_files, sep="")#
+     complete_table<-complete("specdata", 1:332)#
+     nobs<-complete_table$nobs#
+     ids<-complete_table$id[nobs>threshold]#
+     id_len<-length(ids)#
+     corr_vector<-rep(0,id_len)#
+     j<-1#
+     for (i in ids){#
+     	current_files<-read.csv(file_paths[i],header=T, sep=",")#
+     	corr_vector[j]<-cor(current_file$sulfate, current_file$nitrate, use="complete.obs")#
+     	j<-j+1#
+     }#
+     result<-corr_vector#
+     return(result)#
+ }
+cr<-corr("specdata", 150)
+corr <- function(directory, threshold = 0){#
+	directory<-("./specdata/")#
+	all_files <- as.character( list.files(directory) )#
+     file_paths <- paste(directory, all_files, sep="")#
+     complete_table<-complete("specdata", 1:332)#
+     nobs<-complete_table$nobs#
+     ids<-complete_table$id[nobs>threshold]#
+     id_len<-length(ids)#
+     corr_vector<-rep(0,id_len)#
+     j<-1#
+     for (i in ids){#
+     	current_files<-read.csv(file_paths[i],header=T, sep=",")#
+     	corr_vector[j]<-cor(current_files$sulfate, current_files$nitrate, use="complete.obs")#
+     	j<-j+1#
+     }#
+     result<-corr_vector#
+     return(result)#
+ }
+cr<-corr("specdata",150)
+cr
+source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
+submit()
+source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit()
+submit9
+submit()
+?strptime
+?strptime
+x<-as. Date("2012-03-01")
+x<-as.Date("2012-03-01")
+y<-as.Date("2012-02-28")
+x-y
